@@ -19,6 +19,12 @@
 ##[1,]  1.0 0.00
 ##[2,] -0.5 0.25
 
+
+
+
+
+## the makeCachematrix function define the attribute of the function and cache the result when some values are setted
+
 makeCacheMatrix <- function(x = matrix())                        ## define the cache function 
 {
      m <- NULL                                                   ## create an undefined variable
@@ -33,6 +39,8 @@ makeCacheMatrix <- function(x = matrix())                        ## define the c
      list(set=set, get=get,setmat=setmat, getmat=getmat)         ## return the attribute list used
 
 }
+
+## the cacheSolve function get the cached matrix if there is one, and display it, if no one is define it whill make the calculation and store the result 
 cacheSolve <- function(x=matrix(), ...)                          ## Solving the cached matrix function
 {
      m<-x$getmat()                                               ##store the solved matrix in a "m" variable
