@@ -15,7 +15,7 @@
 ## cacheSolve(a)
 
 ## it returns the cache solved matrix like
-##[,1] [,2]
+##      [,1] [,2]
 ##[1,]  1.0 0.00
 ##[2,] -0.5 0.25
 
